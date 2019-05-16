@@ -1,6 +1,10 @@
-package com.perpule.plutusintegrationdemo.model;
+package com.perpule.plutusintegrationdemo.doTransaction;
 
-public class Header {
+public class Request {
+}
+
+
+ class Header {
 
     private String ApplicationId;
 
