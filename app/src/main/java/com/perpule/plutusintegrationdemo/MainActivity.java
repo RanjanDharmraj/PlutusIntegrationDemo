@@ -13,7 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.google.gson.GsonBuilder;
-import com.perpule.plutusintegrationdemo.doTransaction.Header;
+import com.perpule.plutusintegrationdemo.Header;
 
 public class MainActivity extends AppCompatActivity {
 
