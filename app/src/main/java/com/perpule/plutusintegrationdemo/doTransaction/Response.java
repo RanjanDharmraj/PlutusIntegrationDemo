@@ -1,29 +1,49 @@
 package com.perpule.plutusintegrationdemo.doTransaction;
 
+import com.perpule.plutusintegrationdemo.Header;
+
 import java.util.List;
 
 public class Response {
-    private List<Payments> payments;
-    private List<AdditionalInfo> additionalInfo;
 
-    public Response(List<Payments> payments, List<AdditionalInfo> additionalInfo) {
-        this.payments = payments;
-        this.additionalInfo = additionalInfo;
+    private Header header;
+    private com.perpule.plutusintegrationdemo.Response response;
+    private DetailResponse detailResponse;
+
+
+    public Response() {
     }
 
-    public List<Payments> getPayments() {
-        return payments;
+    public Response(Header header, com.perpule.plutusintegrationdemo.Response response, DetailResponse detailResponse) {
+        this.header = header;
+        this.response = response;
+        this.detailResponse = detailResponse;
+
     }
 
-    public void setPayments(List<Payments> payments) {
-        this.payments = payments;
+    public Header getHeader() {
+        return header;
     }
 
-    public List<AdditionalInfo> getAdditionalInfo() {
-        return additionalInfo;
+    public void setHeader(Header header) {
+        this.header = header;
     }
 
-    public void setAdditionalInfo(List<AdditionalInfo> additionalInfo) {
-        this.additionalInfo = additionalInfo;
+    public com.perpule.plutusintegrationdemo.Response getResponse() {
+        return response;
     }
+
+    public void setResponse(com.perpule.plutusintegrationdemo.Response response) {
+        this.response = response;
+    }
+
+    public DetailResponse getDetailResponse() {
+        return detailResponse;
+    }
+
+    public void setDetailResponse(DetailResponse detailResponse) {
+        this.detailResponse = detailResponse;
+    }
+
+
 }
