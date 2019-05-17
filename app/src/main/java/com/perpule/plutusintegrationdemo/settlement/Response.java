@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 
 
 public class Response extends  AppCompatActivity  {
-    private String BactchName;
+    private
     private String AcquierCode;
     private String TID;
     private String MID;
@@ -12,18 +12,18 @@ public class Response extends  AppCompatActivity  {
     private long CreditAmount;
     private long DebitCount;
     private long DebitAmount;
-    Object[] arr = new Object[6];
+    private Object[] SettlementSummary = new Object[8];
 
 
     @Override
     protected void onStart() {
         super.onStart();
-        arr[0] = new String("First Pair");
-        arr[1] = new Integer(1);
-        arr[2] = new String("Second Pair");
-        arr[3] = new Integer(2);
-        arr[4] = new String("Third Pair");
-        arr[5] = new Integer(3);
+        SettlementSummary[0] = new String (""); //
+        SettlementSummary[1] = new String (""); //
+        SettlementSummary[2] = new String("");  //
+        SettlementSummary[3] = new String (""); //
+        SettlementSummary[4] = new Long(1);
+        SettlementSummary[5] = new Long(1);
 
 
     }
